@@ -1,0 +1,68 @@
+﻿ //int n;
+            //Console.Write("Enter number: ");
+            //n = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine(n * 3);
+
+            //try
+            //{
+            //    Console.Write("Enter number: ");
+            //    n = Convert.ToInt32(Console.ReadLine());
+            //    int total = n * n;
+            //    Console.WriteLine("Double; " + total);
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("ERROR!!!!!");
+            //}
+
+
+            //try
+            //{
+            //    int n;
+            //    Console.Write("Enter number: ");
+            //    n = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("3 times: " + n * n * n);
+            //}
+            //catch (ArgumentNullException error1)
+
+            //{
+            //    Console.Write("Error");
+            //}
+            //catch (FormatException error2)
+
+            //{
+            //    Console.WriteLine("Format incorrect");
+            //}
+            //catch(OverflowException)
+            //{
+            //    Console.WriteLine("Number is big or small");
+            //}
+
+
+
+            try
+            {
+                int number;
+                Console.Write("Enter number: ");
+                number = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("3 times " + number * number * number);
+            }
+            catch (OverflowException error1)
+            {
+                Console.WriteLine("Number is too big");
+            }
+            catch (FormatException error2)
+            {
+                Console.WriteLine("Incorrect format");
+                Console.WriteLine(error2.ToString());
+            }
+            catch (ArgumentNullException error3)
+            {
+                Console.WriteLine("Number is not empty");
+                Console.WriteLine(error3.ToString());
+            }
+            finally
+            {
+                Console.WriteLine("Operation is successfully");
+            }

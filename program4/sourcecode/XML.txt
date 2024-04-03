@@ -1,0 +1,20 @@
+﻿    void ara()
+            {
+                Console.WriteLine("*******************************************");
+            }
+
+            string today = "https://www.tcmb.gov.tr/kurlar/today.xml";
+            var docXml = new XmlDocument();
+            docXml.Load(today);
+            string dollaybuying = docXml.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteBuying").InnerXml;
+            Console.WriteLine("Buying Amount{USD}>>" + dollaybuying);
+            ara();
+            string dollarselling = docXml.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteSelling").InnerXml;
+            Console.WriteLine("Selling Amount{USD}>>" + dollarselling);
+            ara();
+            string aznbuying = docXml.SelectSingleNode("/Tarih_Date/Currency[@Kod='JPY']/ForexBuying").InnerXml;
+            Console.WriteLine("ForexBuying Amount{AZN}>>" + aznbuying);
+            ara();
+            string aznselling = docXml.SelectSingleNode("Tarih_Date/Currency[@Kod='AZN']/ForexSelling").InnerXml;
+            Console.WriteLine("ForexSelling>>" + aznselling);
+            ara();

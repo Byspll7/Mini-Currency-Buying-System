@@ -1,0 +1,46 @@
+﻿ //double n;
+            //n = -883.2;
+            //Console.WriteLine(Math.Abs(n));
+
+
+            //double n1, n2;
+            //n1 = 33;
+            //n2 = 45;
+            //Console.WriteLine(Math.Max(n1, n2));
+
+            //double n1, n2;
+            //n1 = 33;
+            //n2 = 45;
+            //Console.WriteLine(Math.Min(n1, n2));
+
+
+            //double n1;
+            //n1 = 4;
+            //Console.WriteLine(Math.Pow(4, n1));
+
+
+            //double n1;
+            //n1 = 64;
+            //Console.WriteLine(Math.Sqrt(n1));
+
+            double n;
+            n = 55.78;
+            Console.WriteLine(Math.Floor(n));//Floor geriye 
+
+
+            double n1;
+            n1= 55.78;
+            Console.WriteLine(Math.Ceiling(n1));//Ceiling qabağa
+
+             double n;
+            n = 55.78;
+            Console.WriteLine(Math.Floor(n));//Floor geriye 
+
+
+            double n1;
+            n1= 55.78;
+            Console.WriteLine(Math.Ceiling(n1));//Ceiling qabağa
+
+            double n2;
+            n2=3.04;
+            Console.WriteLine(Math.Round(n2));// remove .04

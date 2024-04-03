@@ -1,0 +1,66 @@
+﻿ string word1;
+            word1 = "1)Hello \nWorld";
+            Console.WriteLine(word1);
+
+            Upper
+
+            string word2;
+            word2 = "2)Hello World";
+            Console.WriteLine(word2.ToUpper());
+
+            Lower
+
+            strin g word3;
+            word3 = "3)Hello World";
+            Console.WriteLine(word3.ToLower());
+
+
+            StartWith
+
+            string word4;
+            word4 = "Hello World";
+            Console.WriteLine(word4.StartsWith("H"));//True
+
+            EndWith
+
+            string word5;
+            word5 = "Hello World";
+            Console.WriteLine(word5.EndsWith("d"));//Trye
+
+            IndexOf
+
+            string word6;
+            word6 = "Hello World";
+            Console.WriteLine(word6.IndexOf("W"));//Console.WriteLine(word6.IndexOf("W",7,9)); From 7 to 9 string
+            
+            Insert
+
+            string word7;
+            word7 = "7)Hello World";
+            Console.WriteLine(word7.Insert(4, "Main"));
+
+            Remove
+
+            string word8;
+            word8 = "8)Hello World";
+            Console.WriteLine(word8.Remove(4, 5));
+
+            Substring
+
+            string word9;
+            word9 = "9)Hello World";
+            Console.WriteLine(word9.Substring(4));
+
+            Replace
+
+            string word10;
+            word10 = "Hello World";
+            Console.WriteLine(word10.Replace("l", "L"));
+
+            Trim
+
+            string word11;
+            word11 = "    Hello  World    ";
+            Console.WriteLine(word11.Trim());
+
+
